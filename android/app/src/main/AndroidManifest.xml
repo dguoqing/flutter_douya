@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fultter_uniapp_demo_dgq">
    <application
-        android:label="flutter_uniapp_demo"
+        android:label="flutter_douya"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

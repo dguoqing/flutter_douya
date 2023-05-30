@@ -1,4 +1,4 @@
-package com.example.flutter_uniapp_demo
+package com.example.flutter_douya
 
 import io.flutter.embedding.android.FlutterActivity
 

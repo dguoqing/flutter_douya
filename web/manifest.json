@@ -1,6 +1,6 @@
 {
-    "name": "flutter_uniapp_demo",
-    "short_name": "flutter_uniapp_demo",
+    "name": "flutter_douya",
+    "short_name": "flutter_douya",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
