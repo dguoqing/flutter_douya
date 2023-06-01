@@ -14,7 +14,14 @@ class _HomePageState extends State<HomePage> {
   }
 
   void onPressedPage() {
-    Get.toNamed('/usr');
+    Get.toNamed('/pageview');
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print('首页initState');
   }
 
   @override

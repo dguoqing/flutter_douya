@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Mine extends StatefulWidget {
-  const Mine({super.key});
+class MinePage extends StatefulWidget {
+  const MinePage({super.key});
 
   @override
-  State<Mine> createState() => _MineState();
+  State<MinePage> createState() => _MinePageState();
 }
 
-class _MineState extends State<Mine> {
+class _MinePageState extends State<MinePage> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print('我的initState');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

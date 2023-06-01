@@ -25,8 +25,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: '豆芽',
-      initialRoute: '/',
-      home: const HomePage(),
+      initialRoute: '/home',
+      // home: const HomePage(),
       getPages: getRoutes,
       debugShowCheckedModeBanner: false,
     );

@@ -9,6 +9,13 @@ class MarketPage extends StatefulWidget {
 
 class _MarketPageState extends State<MarketPage> {
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print('市集initState');
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

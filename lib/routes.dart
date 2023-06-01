@@ -1,3 +1,4 @@
+import 'package:flutter_douya/pages/bottomNavigationBar.dart';
 import 'package:get/get.dart';
 import 'package:flutter_douya/pages/home/home.dart';
 import 'package:flutter_douya/pages/login/login.dart';
@@ -8,7 +9,7 @@ class AppRouter {
     GetPage(name: '/', page: () => const HomePage()),
     GetPage(name: '/login', page: () => const Login()),
     GetPage(
-        name: '/cccc',
+        name: '/pageview',
         page: () => const MyPageView(),
         transition: Transition.rightToLeft),
   ];
@@ -17,14 +18,14 @@ class AppRouter {
 List<GetPage<dynamic>> getRoutes = [
   GetPage(
       name: '/home',
-      page: () => const HomePage(),
+      page: () => const MainBottomNavBar(),
       transition: Transition.rightToLeft),
   GetPage(
       name: '/login',
       page: () => const Login(),
       transition: Transition.rightToLeft),
   GetPage(
-      name: '/usr',
+      name: '/pageview',
       page: () => const MyPageView(),
       transition: Transition.rightToLeft),
 ];

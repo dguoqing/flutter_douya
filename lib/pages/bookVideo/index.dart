@@ -9,6 +9,13 @@ class BookVideoPage extends StatefulWidget {
 
 class _BookVideoPageState extends State<BookVideoPage> {
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print('书影音initState');
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
