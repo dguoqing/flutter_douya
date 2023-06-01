@@ -8,7 +8,9 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+// 1.防止重建加with 混入 AutomaticKeepAliveClientMixin类
+class _HomePageState extends State<HomePage>
+    with AutomaticKeepAliveClientMixin {
   void onPressed() {
     Get.toNamed('/login');
   }
@@ -23,6 +25,10 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     print('首页initState');
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 
   @override
   Widget build(BuildContext context) {

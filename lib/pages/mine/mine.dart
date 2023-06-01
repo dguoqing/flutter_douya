@@ -7,13 +7,20 @@ class MinePage extends StatefulWidget {
   State<MinePage> createState() => _MinePageState();
 }
 
-class _MinePageState extends State<MinePage> {
+// 1.防止重建加with 混入 AutomaticKeepAliveClientMixin类
+class _MinePageState extends State<MinePage>
+    with AutomaticKeepAliveClientMixin {
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     print('我的initState');
   }
+
+// 2.防止重建必须要的实现 返回true
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 
   @override
   Widget build(BuildContext context) {

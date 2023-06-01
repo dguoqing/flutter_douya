@@ -7,13 +7,19 @@ class GroupPage extends StatefulWidget {
   State<GroupPage> createState() => _GroupPageState();
 }
 
-class _GroupPageState extends State<GroupPage> {
+// 1.防止重建加with 混入 AutomaticKeepAliveClientMixin类
+class _GroupPageState extends State<GroupPage>
+    with AutomaticKeepAliveClientMixin {
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     print('小组initState');
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 
   @override
   Widget build(BuildContext context) {

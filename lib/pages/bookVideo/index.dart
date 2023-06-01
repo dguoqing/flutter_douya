@@ -7,13 +7,20 @@ class BookVideoPage extends StatefulWidget {
   State<BookVideoPage> createState() => _BookVideoPageState();
 }
 
-class _BookVideoPageState extends State<BookVideoPage> {
+// 1.防止重建加with 混入 AutomaticKeepAliveClientMixin类
+class _BookVideoPageState extends State<BookVideoPage>
+    with AutomaticKeepAliveClientMixin {
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     print('书影音initState');
   }
+
+// 2.防止重建必须要的实现 返回true
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 
   @override
   Widget build(BuildContext context) {
